@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<title>  Playground Vote </title>
+	<style>
+		body {
+			padding: 10px;
+			height:auto;
+			min-height:100%;
+		}
+
+		h1 {
+			font-family: 'Roboto', sans-serif;
+			font-size: 20px;
+
+		}
+
+		h2 {
+			font-family: 'PT Sans', sans-serif;
+			font-size:15px;
+		}
+
+		p, li {
+			font-family: 'PT Sans', sans-serif;
+			font-size:15px;
+		}
+
+		p.bold {
+			font-family: 'PT Sans', sans-serif;
+			font-weight:bold;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		
+		.Banner {
+			display:inline;
+		}
+
+		.Logo {
+			float:left;
+		}
+
+		.Banner li {
+			display:inline;
+			font-family: 'PT Sans', sans-serif;
+			font-size:15px;
+			padding:10px;
+		}
+
+		.Banner .Container {
+			float:right;
+			display:inline-block;
+		}
+
+		.line {
+			border-color:#D4D4D4;
+		}
+
+		.divImage {
+			height:50%;
+			width:50%;
+			margin:auto;
+
+		}
+
+		.CommunitySkatepark, .ShoppingCenter, .Grindground {
+			display:inline-block;
+			width:30%;
+			height:auto;
+			padding:22px;
+			border-style:solid;
+			border-color:#D4D4D4;
+			margin-top:10px;
+		}
+
+		textarea {
+			width: 40em;
+			height:24em;
+			background-repeat: no-repeat;
+		}
+
+		.Submit {
+			display:inline-block;
+			position:relative;
+		}
+
+		#Submit {
+			position:absolute;
+			bottom:10px;
+			right:10px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="Banner">
+
+		<div class="Logo">
+			<a href="Community Hub.html">
+				<img src="http://puu.sh/rytIS/9f6df6ae45.jpg"/>
+			</a>
+		</div>
+
+		<div class="Container">
+			<ul>
+				<li> <a href="#About Us"> About Us </a> </li>
+				<li> <a href="#Projects"> Projects </a> </li>
+			</ul>
+		</div>
+
+	</div>
+
+	<hr class="line" align="center" width="100%">
+
+	<h2> Vote for whether the development of the playground should proceed or be terminated. </h2>
+
+	<!-- 
+		<img src="http://img.archiexpo.com/images_ae/photo-g/63496-4757615.jpg" class="divImage"/>
+	-->
+
+		<form action="">
+			<input type='checkbox' name="Vote" value="Yes"> Vote to proceed with development <br>
+			<input type='checkbox' name="Vote" value="No"> Vote to terminate development
+		</form>
+
+		<br>
+		<br>
+
+		<h2> Please enter feedback on why you voted for either why the development should proceed or be terminated </h2>
+
+		<div class="Submit">
+
+			<textarea name="feedback" id="txt" cols="30" rows="10"> </textarea>
+			
+			<form action="ThankYou.html"> 
+				<input type="submit" value+"Submit" style="float:right" action="ThankYou.html" id="submit">
+			</form>
+
+		</div>
+
+</body>
+</HTML>
